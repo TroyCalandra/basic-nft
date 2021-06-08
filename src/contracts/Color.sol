@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity 0.8.2;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
@@ -7,7 +8,7 @@ contract Color is ERC721Enumerable {
     string[] public colors;
     mapping(string => bool) _colorExists;
 
-    constructor() ERC721("Color", "COLOR") public {}
+    constructor() ERC721("Color", "COLOR") {}
 
     // E.G. color = #FFFFFF
     function mint(string memory _color) public {
